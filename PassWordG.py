@@ -32,12 +32,13 @@ def generar():
     pc.copy(contraseña)
     for i in tqdm(range(10)):
         time.sleep(.5)
-    print("La contraseña de " + longitud + "caracteres de longitud es: " + Fore.RED + contraseña + Fore.RESET + "\nLa contraseña se copio correctamente al portapapeles")
+    print("\n[*] La contraseña de " + longitud + " caracteres de longitud es: " + Fore.RED + Back.WHITE + contraseña + Fore.RESET + Back.RESET + "\n[*]" + " La contraseña se copio correctamente al portapapeles")
 
 def encrypt():
     clear()
-    os.system("git clone https://github.com/nuoframework/3NCRYPY.git","cd 3NCRYPY","python ENC4YPT.py")
+    os.system("git clone https://github.com/nuoframework/3NCRYPY.git")
     os.system("cd 3NCRYPY")
+    os.system("python ENC4YPT.py")
 
 def autodestruccion():
     if os.name == "nt":
